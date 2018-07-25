@@ -11,7 +11,7 @@ except ImportError:
 class news_report:
 
     def __init__(self):
-        self.name = None #crating an instance
+        self.name = None #creating an instance
         
     def get_urls(self):
         urls = []
