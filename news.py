@@ -7,6 +7,7 @@ try:
     from urllib import urlopen 
 except ImportError:
     print "Install urllib library"
+    
 class news_report:
 
     def __init__(self):
@@ -18,7 +19,14 @@ class news_report:
         urls.append("https://news.google.com/news/rss")
         urls_names.append("google news")
         return urls, urls_names
-
+    
+    def give_url(self):
+        urls = []
+        urls_names = []
+        urls.append(raw_input("Add Url: "))
+        urls_names.append(raw_input("Give url name: "))
+        return urls, urls_names
+    
     def start_connection(self,url):
         client = urlopen(url)
         xml_page = client.read()
