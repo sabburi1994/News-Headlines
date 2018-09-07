@@ -16,8 +16,8 @@ class news_report:
     def get_urls(self):
         urls = []
         urls_names = []
-        urls.append("https://news.google.com/news/rss")
-        urls_names.append("google news")
+        urls.append("https://news.ycombinator.com/newest")
+        urls_names.append("ycombinator news")
         return urls, urls_names
     
     def give_url(self):
