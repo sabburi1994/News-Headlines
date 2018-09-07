@@ -1,5 +1,5 @@
 ECHO ON
 REM A batch script to execute a Python script 
 SET PATH=%PATH%;C:\Python27
-python test.py
+python news.py
 PAUSE
